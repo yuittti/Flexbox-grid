@@ -1,0 +1,56 @@
+.btn {
+  font-family: $font-med;
+  text-align: center;
+  @extend .flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  position: relative;
+  height: 70px;
+  border-radius: 35px;
+  background: #307ac6;
+  transition: $time/2 linear background;
+  max-width: 100%;
+
+  @include media(480) {
+    height: 60px;
+  }
+
+  &-lg {
+    width: 320px;
+    color: white;
+
+    &:hover {
+      background: #4aa7ef;
+      transition: .1s linear background-color;
+    }
+
+    @include media(480) {
+      width: 280px;
+    }
+
+  }
+
+  &-md {
+    width: 300px;
+    &:hover {
+      transition: $time linear background;
+    }
+
+    @include media(480) {
+      width: 280px;
+    }
+  }
+
+  &-sm {
+    width: 230px;
+    &:hover {
+      background: #4aa7e4;
+      transition: $time linear background;
+    }
+  }
+
+
+}
+

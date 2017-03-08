@@ -1,0 +1,36 @@
+$grid-columns: 12;
+$grid-gutter: 10px;
+$responsive-breakpoints: (
+	xs: (cutoff: 320px, containerWidth: 100%), 
+	sm: (cutoff: 544px, containerWidth: 100%), 
+	md: (cutoff: 768px, containerWidth: 100%), 
+	lg: (cutoff: 992px, containerWidth: 100%), 
+	xl: (cutoff: 1200px)
+) !default;
+
+$font1-light: "Roboto-Light";
+$font1-bold: "Roboto-Bold";
+$font1-medium: "Roboto-Medium";
+$font1-regular: "Roboto-Regular";
+$font1-black: "Roboto-Black";
+$font1-italic: "Roboto-Italic";
+$font1-black-italic: "Roboto-BlackItalic";
+$font1-light-italic: "Roboto-LightItalic";
+$font2-bold: "FiraSans-Bold";
+$font3-bold: "GothamProBold";
+$font3-light: "GothamProLight";
+$font4-light: "Exo2 Light";
+
+$blue: #008dd3;
+$darkblue: #3a5e7f;
+$lightgray: #a3a3a3;
+$gray: #666666;
+$darkgray: #414749;
+$black: #212121;
+$rgbablue: rgba(0, 141, 211, 0.5);
+
+
+@import "base/reset";
+@import "base/helpers";
+@import "base/responsive";
+@import "base/grid";

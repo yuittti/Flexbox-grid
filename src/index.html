@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABS</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--<meta property="og:image" content="img/preview.jpg">-->
+		<link rel="shortcut icon" href="#" type="image/x-icon">
+		<!-- <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ) ?>"> -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<div class="page-wrapper">
+
+			<header class="page-header">
+				
+			</header>
+
+			<main class="page-content">
+				
+			</main>
+
+			<footer class="page-footer">
+				
+			</footer>
+
+
+			
+		</div>
+
+		<div id="formModal" class="modal">
+		    <div class="mega-wrap">
+			    <div class="modal-wrapper">
+			        <div class="close-btn"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+			        <div class="modal-inner">
+			            <div class="modal-head">
+			                <span class="modal-title">
+			                    Получить бесплатную консультацию 
+			                </span>
+			            </div>
+
+			            <div class="modal-form">
+			                <form id="feedbackForm">
+			                    <div class="modal-form-item">
+			                        <label for="uName">Имя</label>
+			                        <input id="uName" name="uName" type="text" placeholder="Имя, Фамилия" required>
+			                    </div>
+			                    <div class="modal-form-item">
+			                        <label for="uEmail">Email</label>
+			                        <input id="uEmail" name="uEmail" type="email" placeholder="Почтовый адрес (имейл)">
+			                    </div>
+			                    <div class="modal-form-item">
+			                        <label for="uPhone">Телефон</label>
+			                        <input id="uPhone" name="uPhone" type="tel" placeholder="Номер телефона">
+			                    </div>
+			                    <div class="modal-form-item">
+			                        <label for="uTxt" class="slabel">Вопрос</label>
+			                        <textarea id="uTxt" name="uTxt" placeholder="Ваш отзыв" required></textarea>
+			                    </div>
+			                    <div class="modal-form-item input-submit">
+			                        <input class="btn btn-md" id="feedbackSubmit" type="submit" value="Отправить">
+			                    </div>
+			                </form>
+			            </div>
+			        </div>
+
+			        <div class="modal-inner thanks-modal">
+			            <div class="modal-head">
+			                <span class="modal-title">
+			                    Cпасибо!
+			                </span>
+			                <span class="modal-subtitle">
+			                    <p>Ваше сообщение успешно отправлено!</p>
+			                </span>
+			            </div>
+			        </div>
+
+			        <div class="modal-inner error-modal">
+			            <div class="modal-head">
+			                <span class="modal-title">
+			                    Ошибка!
+			                </span>
+			                <span class="modal-subtitle">
+			                    <p>К сожалению, ваше сообщение не было отправлено.<br>Попробуйте, пожалуйста, позже.</p>
+			                </span>
+			            </div>
+			        </div>
+			    </div>
+
+			    <div class="white-page"></div>
+		    </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		  crossorigin="anonymous">
+	  	</script>
+	  	<script src="libs/jquery.mask.min.js"></script>
+
+	  	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvj8kF_7yQ2RwyT8YRKu2fbOkavymmXUY&v=3.exp&sensor=false"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

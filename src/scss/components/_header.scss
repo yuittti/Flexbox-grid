@@ -1,0 +1,206 @@
+.header {
+  // height: 100%;
+  height: 650px;
+  background: url(../images/header-bg.jpg) center top no-repeat;
+  background-size: cover;
+
+  @include media(1200) {
+    height: 600px;
+  }
+  @include media(1023) {
+    height: 550px;
+  }
+  @include media(720) {
+    height: auto;
+  }
+
+
+  .container {
+  	display: flex;
+  	flex-direction: column;
+    height: inherit;
+  }
+
+  &-txt {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+
+    @include media(1023) {
+      align-items: flex-start;
+    }
+    @include media(720) {
+
+    }
+
+    .page-title {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .page-subtitle {
+      display: block;
+      padding-right: 30%;
+
+      @include media(1265) {
+        padding-right: 20%;
+      }
+      @include media(1125) {
+        padding-right: 10%;
+      }
+      @include media(1023) {
+        padding-right: 0;
+        width: 50%;
+      }
+       @include media(720) {
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+      }
+      @include media(480) {
+        font-size: 16px;
+        line-height: 22px;
+        width: 75%;
+      }
+    }
+
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+
+    @include media(1023) {
+      width: 100%;
+      margin-top: 30px;
+    }
+    @include media(768) {
+      margin-top: 40px;
+    }
+    @include media(720) {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+  }
+
+  &-right {
+    position: absolute;
+    right: -35px;
+    bottom: -140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(1310) {
+      right: -10px;
+    }
+
+    @include media(1200) {
+      bottom: -80px;
+    }
+
+    @include media(1023) {
+      bottom: -100px;
+      right: auto;
+      left: 50%;
+    }
+
+    @include media(768) {
+      bottom: -50px;
+    }
+
+    @include media(720) {
+      bottom: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include media(480) {
+      bottom: 130px;
+    }
+
+    img {
+      @include media(1200) {
+        width: 650px;
+      }
+      @include media(1023) {
+        width: 550px;
+      }
+      @include media(768) {
+        width: 450px;
+      }
+      @include media(720) {
+        width: 300px;
+      }
+
+    }
+  }
+
+  .btn-md {
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
+
+    &:hover {
+      background: #307ac6;
+    }
+
+    @include media(720) {
+      margin-top: 270px;
+    }
+  }
+
+  .btn-txt {
+
+    font-family: $ubuntu;
+    font-size: 13px;
+    align-self: flex-start;
+    background: transparent;
+    height: auto;
+    margin-top: 28px;
+    margin-left: 45px;
+    padding-left: 27px;
+    position: relative;
+
+    @include media(720) {
+      margin-left: 0;
+      align-self: center;
+    }
+
+    &:before {
+      content: '\f144';
+      display: block;
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0;
+      text-align: center;
+      font-size: 16px;
+      color: white;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      opacity: 0.2;
+      background: white;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      z-index: 0;
+      transform: scalex(0);
+      z-index: 1;
+    }
+
+    &:hover {
+      &:after {
+        transform: scalex(1);
+        transition: $time/2 linear;
+      }
+    }
+
+
+  }
+}

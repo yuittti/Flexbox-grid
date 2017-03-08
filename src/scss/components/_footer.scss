@@ -1,0 +1,194 @@
+.footer {
+	padding-bottom: 30px;
+	color: white;
+	background: #fafafa;
+	
+
+	@include media(640) {
+		margin-top: 0;
+		padding-bottom: 20px;
+	}
+	
+	.footer-wrap {
+		@extend .flex;
+		padding-top: 30px;
+		border-top: 1px solid #e1e1e1;
+
+		@include media(640) {
+			flex-direction: column;
+		}
+	}
+
+	.left-foot {
+		@extend .flex;
+		width: 100%;
+
+		@include media(1200) {
+			width: 70%;
+		}
+		
+		@include media(640) {
+			width: 100%;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+
+		
+	}
+
+	.logo {
+		margin-top: -20px;
+
+		@include media(1023) {
+		    margin-bottom: 0;
+		}
+
+		@include media(640) {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		&-txt {
+			@include media(700) {
+				display: none;
+			}
+		}
+
+		&-img {
+			@include media(700) {
+				&:after {
+					display: none;
+				}
+			}
+
+			@include media(640) {
+				padding-right: 0;
+				width: auto;
+			}
+		}
+	}
+
+	.logo-btm {
+		color: #666;
+	}
+
+	
+
+	.soc-links {
+		@extend .flex;
+
+
+		.label {
+			font-family: $ubuntu;
+			font-weight: 300;
+			font-size: 13px;
+			color: #333;
+
+			@include media(1023) {
+				display: none;
+			}
+		}
+
+		.soc-item {
+			margin-left: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 33px;
+			height: 33px;
+			text-decoration: none;
+
+			@include media(640) {
+				&:nth-of-type(1) {
+					margin-left: 0;
+				}
+			}
+
+			.fa {
+				line-height: 33px;
+			    color: white;
+			    font-size: 12px;
+
+			    &:hover {
+			    	color: white;
+			    }
+			}
+
+			&.fb {
+				background: #2556a1;
+
+				&:hover {
+					background: #3267ae;
+				}
+			}
+
+			&.vk {
+				background: #2d76a6;
+
+				&:hover {
+					background: #005e8e;
+				}
+			}
+
+			&.gp {
+				background: #fe4c3d;
+
+				&:hover {
+					background: #fe4b37;
+				}
+			}
+
+			&.tw {
+				background: #00aef1;
+
+				&:hover {
+					background: #00aef1;
+				}
+			}
+		}
+	}
+
+	.dev-credits {
+		@extend .flex;
+		justify-content: flex-end;
+
+		@include media(1200) {
+			width: 30%;
+		}
+		
+
+		@include media(640) {
+			justify-content: center;
+			width: 100%;
+		}
+
+		@include media(420) {
+			justify-content: center;
+		}
+
+
+		.label {
+			// font-family: $ubuntu;
+			font-family: $font-light;
+			font-size: 13px;
+			color: #9a9a9a;
+			width: 85px;
+			margin-right: 15px;
+
+			@include media(700) {
+				margin-right: 5px;
+			}
+		}
+
+		a {
+			width: 61px;
+			height: 48px;
+			display: block;
+
+			img {
+				width: 100%;
+
+			}
+		}
+	}
+}
